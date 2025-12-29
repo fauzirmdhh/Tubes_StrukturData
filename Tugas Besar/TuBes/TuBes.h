@@ -40,24 +40,17 @@ struct ListLevel{
 
 void createListLevel(ListLevel &L);
 bool isEmptyLevel(ListLevel L);
-
 adrLevel createElemenLevel(string namaLevel);
 adrKursus createElemenKursus(string kode, string judul, int durasi, int jumlahModul, string Modul[]);
-
 void insertLevel(ListLevel &L, adrLevel p);
 void insertKursus(adrLevel p, adrKursus q);
-
 adrLevel searchLevel(ListLevel L, string namaLevel);
 adrKursus searchKursusByKode(ListLevel L, string kode);
 void searchKursusByJudul(ListLevel L, string judul);
-
 void deleteKursus(adrLevel p, string kode);
-
 void displayList(ListLevel L);
 void displayListSortedByDurasi(ListLevel L);
-
 void updateKursus(ListLevel L, string kode);
-
 void hitungKursusPerLevel(ListLevel L);
 void kursusModulTerbanyakDanDurasiTerlama(ListLevel L);
 

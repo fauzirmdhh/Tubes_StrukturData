@@ -121,6 +121,7 @@ void searchKursusByJudul(ListLevel L, string judul){
                 cout << "Judul   : " << q->info.judul << endl;
                 cout << "Level   : " << p->info.namaLevel << endl;
                 cout << "Durasi  : " << q->info.durasi << " jam" << endl;
+                cout << "Modul  : " << q->info.jumlahModul << endl;
                 found = true;
             }
             q = q->next;
@@ -197,7 +198,7 @@ void displayList(ListLevel L){
                 for (int i = 0; i < q->info.jumlahModul; i++) {
                     cout << " - " << q->info.modul[i] << endl;
                 }
-                cout << "---------------------" << endl;
+                cout << "----------------------------------------" << endl;
                 q = q->next;
         }
         p = p->next;
@@ -296,8 +297,9 @@ void updateKursus(ListLevel L, string kode) {
                 cout << "Judul  : " << q->info.judul << endl;
                 cout << "Durasi : " << q->info.durasi << endl;
                 cout << "Modul  : " << q->info.jumlahModul << endl;
+                cout << endl;
 
-                cout << "\nMasukkan data baru\n";
+                cout << "Masukkan data baru" << endl;
                 cout << "Judul Kursus  : ";
                 cin >> q->info.judul;
 
@@ -316,7 +318,7 @@ void updateKursus(ListLevel L, string kode) {
                     q->info.jumlahModul = 0;
                 }
 
-                cout << "Data kursus berhasil diperbarui.\n";
+                cout << "Data kursus berhasil diperbarui" << endl;
                 ditemukan = true;
             }
             q = q->next;
@@ -360,7 +362,7 @@ void displayListSortedByDurasi(ListLevel L) {
             cout << "Judul  : " << r->info.judul << endl;
             cout << "Durasi : " << r->info.durasi << " jam" << endl;
             cout << "Modul : " << r->info.jumlahModul << endl;
-            cout << "  ---------------------------" << endl;
+            cout << "----------------------------------------" << endl;
             r = r->next;
         }
 

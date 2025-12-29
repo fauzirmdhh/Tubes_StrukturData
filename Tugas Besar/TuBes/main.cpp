@@ -123,7 +123,7 @@ int main() {
             break;
 
         case 9:
-            cout << "Masukkan Kode Kursus yang akan diupdate" << endl;
+            cout << "Masukkan Kode Kursus yang akan diupdate ";
             cin >> kode;
             updateKursus(L, kode);
             cout << endl;
